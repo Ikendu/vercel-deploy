@@ -1,0 +1,364 @@
+.top {
+  width: 100%;
+  height: 10vh;
+  background-color: #d8dde0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-evenly;
+  top: 0;
+  z-index: 10;
+}
+a {
+  cursor: pointer;
+}
+.content a {
+  margin-left: 10px;
+}
+.logo {
+  position: absolute;
+  left: 0;
+}
+.name {
+  font-size: 35px;
+  font-weight: bold;
+  color: #403de2;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+.icon {
+  border-radius: 50%;
+  width: 45px;
+  height: 50px;
+}
+
+.logo a {
+  display: flex;
+  margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .top {
+    height: 45px;
+    width: 100%;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  .name {
+    font-size: 20px;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+  margin-block: 0;
+  align-items: center;
+  margin-left: 150px;
+
+  top: 18px;
+  border-radius: 12px;
+}
+nav ul li {
+  font-size: 16px;
+  color: #1b4070;
+  list-style: none;
+  padding: 5px 20px;
+}
+nav ul li:hover {
+  color: #06420a;
+  border-top: 2px solid #e5030d;
+  border-bottom: 2px solid #e5030d;
+  border-radius: 12px;
+}
+.nav-icon svg {
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  display: none;
+  top: 4px;
+}
+
+/* mobile only css */
+.content-mob ul {
+  display: none;
+  background-color: #2a0305;
+  position: fixed;
+  right: 0px;
+  top: 43px;
+  z-index: 9;
+  border-top-right-radius: 0;
+}
+
+.content-mob ul li {
+  display: block;
+  font-size: 16px;
+  color: #6297db;
+  padding: 5px 20px;
+  padding: 15px 60px;
+  border-top: 2px solid #7e7e7d;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  .content-mob ul {
+    display: block;
+  }
+  .nav-icon svg {
+    display: block;
+  }
+}
+
+.shopping {
+  text-align: center;
+  z-index: 5;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.shopping svg {
+  width: 50px;
+}
+
+.shopping span {
+  position: absolute;
+  top: -5;
+  background-color: #403de2;
+  border-radius: 40%;
+  padding: 3px 6px;
+  margin-left: -10px;
+  color: rgb(235, 229, 229);
+}
+.shopping p {
+  background-color: #403de2;
+  color: #f1eded;
+  border-radius: 5px;
+  padding-bottom: 4px;
+  margin-top: -17px;
+}
+@media screen and (max-width: 900px) {
+  .shopping {
+    margin-right: -200px;
+  }
+  .shopping svg {
+    width: 30px;
+  }
+  .shopping span {
+    font-size: 12px;
+    border-radius: 40%;
+    padding: 1px 4px;
+  }
+  .shopping p {
+    border-radius: 5px;
+    padding-bottom: 2px;
+    margin-top: -20px;
+    font-size: 12px;
+  }
+}
+/*
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: block;
+    background-color: #2a0305;
+    border-radius: 0;
+  }
+  #content ul {    
+    right: 0;
+    top: 40px;
+  }
+  nav ul:nth-child(1) {
+    padding-bottom: 20px;
+  }
+  nav ul li {
+    right: 0;
+    padding: 0px 50px;
+    padding-top: 20px;
+    border-top: 2px solid #7d7e7e;
+    text-align: center;
+  }
+  .fa-bars {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    color: #1c8c96;
+  }
+} */
+main {
+  height: 90vh;
+  background-color: #d8dde0;
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+}
+
+main img {
+  width: 500px;
+  height: 90vh;
+  border-radius: 0 0 150px 150px;
+}
+
+main h1 {
+  font-size: 130px;
+  margin: 40px 0 40px 70px;
+  color: #403de2;
+  position: relative;
+  right: -20%;
+  z-index: 1;
+}
+main .write {
+  border-top: 2px solid #403de2;
+  border-bottom: 4px solid #403de2;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 60px;
+}
+
+main .head-write {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+
+main .more-write {
+  text-align: justify;
+  color: #435d5e;
+  font-size: 20px;
+  line-height: 30px;
+  z-index: -10;
+}
+p button {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #3431eb;
+}
+
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  main {
+    position: relative;
+    top: -30px;
+    width: 100%;
+    height: 85vh;
+  }
+  main h1 {
+    font-size: 40px;
+    color: #051520;
+    background-color: transparent;
+    margin-left: 0;
+    margin-top: 110px;
+  }
+
+  main .more-write {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    line-height: 20px;
+  }
+  main .head-write {
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 30px;
+  }
+  main .write {
+    margin-top: -30px;
+  }
+
+  .front-page {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 400px;
+    z-index: 3;
+  }
+  .trans {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 30px;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+  }
+  main img {
+    z-index: 1;
+    border-radius: 0 0 30px 30px;
+    height: 85vh;
+  }
+  p button {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 7px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main h1 {
+    margin-left: -50px;
+  }
+  main .write {
+    margin-left: -8px;
+    width: 320px;
+  }
+
+  .trans {
+    top: 90px;
+    left: 30px;
+    height: 420px;
+  }
+  main,
+  main img {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  main h1 {
+    margin-left: -60px;
+    margin-top: 110px;
+    font-size: 35px;
+  }
+
+  main .write {
+    width: 290px;
+    margin-top: -35px;
+  }
+
+  .trans {
+    top: 110px;
+    width: 305px;
+    left: 30px;
+    height: 350px;
+  }
+  main {
+    margin-bottom: 20px;
+  }
+  main,
+  main img {
+    height: 70vh;
+  }
+  main .more-write {
+    color: rgb(26, 24, 24);
+    font-size: 14px;
+    margin-top: -15px;
+  }
+  main .head-write {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 20px;
+  }
+}
